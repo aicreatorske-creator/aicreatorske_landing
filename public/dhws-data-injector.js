@@ -123,13 +123,7 @@
    * Extracts text content from an element
    */
   function extractTextContent(element) {
-    let text = '';
-    for (const node of element.childNodes) {
-      if (node.nodeType === Node.TEXT_NODE) {
-        text += node.textContent.trim() + ' ';
-      }
-    }
-    return text.trim();
+    return element.textContent.trim();
   }
 
   /**
